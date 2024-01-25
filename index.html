@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoky's Club</title>
+  <link rel="icon" type="image/x-icon" href="images/6.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- tailwind and daizyui -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- fontwesome link -->
+  <script src="https://kit.fontawesome.com/a9b5588f0c.js" crossorigin="anonymous"></script>
+
+  <!-- tailwind customs color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'red': '#FF4240',
+            'green': '#49D293',
+            'orange': '#FFB546',
+            'blue': '#4C8DF1',
+
+            'button-primary': '#FF4240; ',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header class="md:container md:mx-auto">
+    <!-- navber section -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About
+
+                </a></li>
+              <li><a>Pages
+
+                </a></li>
+              <li><a>Blog
+
+                </a></li>
+              <li><a>Contact
+
+                </a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost font-bold text-5xl">
+            Hokey <span class="text-[#FF4240]">'</span>s
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-red-500">Home</a></li>
+            <li><a>About
+
+              </a></li>
+            <li><a>Pages
+
+              </a></li>
+            <li><a>Blog
+
+              </a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+
+          <a class="btn btn-outline border-none me-4">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a class="btn bg-button-primary text-white">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <!-- carousel items -->
+
+    <section class="my-24">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="images/news-1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="images/news-2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="images/news-3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-actions mb-20 justify-end me-10">
+        <div class="card left-0 w-96 bg-black text-primary-content">
+          <div class="card-body">
+            <h2 class="card-title">Meet all the heroes from the field</h2>
+            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+              nullam proin. </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </header>
+
+  <main class="md:container md:mx-auto">
+
+    <!-- profetional section -->
+    <section class="text-center my-24">
+      <h2 class="text-4xl font-semibold mb-5">Professional Hockeys Club</h2>
+      <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
+        slightly believable. </p>
+
+      <!-- profetional card container -->
+      <!-- card 1 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="card bg-base-100 ">
+          <figure class="px-10 pt-10">
+            <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar"><span
+                class="text-black">87%</span></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-bold">Prayer Facility</h2>
+            <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card bg-base-100 ">
+          <figure class="px-10 pt-10">
+            <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar"><span
+                class="text-black">95%</span></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-bold">Experienced Coach</h2>
+            <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card bg-base-100 ">
+          <figure class="px-10 pt-10">
+            <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar"><span
+                class="text-black">90%</span></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-bold">Senior Player</h2>
+            <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card bg-base-100 ">
+          <figure class="px-10 pt-10">
+            <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar"><span
+                class="text-black">80%</span></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-bold">Training Ground</h2>
+            <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- program section -->
+
+    <section class="text-center my-24">
+      <h2 class="text-4xl font-semibold mb-5">Program Sections</h2>
+      <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
+        slightly believable. </p>
+      <!-- program card -->
+
+      <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
+        <!-- card 1 -->
+        <div class="card w-full  shadow-xl image-full">
+          <figure><img src="Images/2.png" alt="Shoes" /></figure>
+          <div class="card-body z-40 items-center justify-center mt-10 ">
+            <h2 class="card-title">Junior Program</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+            </p>
+            <div class="card-actions ">
+              <button class="btn bg-button-primary border-none ps-10 pe-10 text-white">Register Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card w-full bg-base-100 shadow-xl image-full">
+          <figure><img src="Images/3.png" alt="Shoes" /></figure>
+          <div class="card-body z-40 items-center justify-center mt-10 ">
+            <h2 class="card-title">Junior Program</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+            </p>
+            <div class="card-actions ">
+              <button class="btn bg-button-primary border-none ps-10 pe-10 text-white">Register Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card w-full lg:col-span-2 bg-base-100 shadow-xl image-full">
+          <figure><img src="Images/4.png" alt="Shoes" /></figure>
+          <div class="card-body z-40 items-center justify-center mt-40">
+            <h2 class=" card-title">Junior Program</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.
+            </p>
+            <div class=" ">
+              <button class="btn bg-button-primary border-none ps-10 pe-10 text-white">Register Now</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- our new product -->
+
+    <section class="my-24 text-center">
+      <h2 class="text-4xl font-semibold mb-5">Our New Products</h2>
+      <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
+        slightly believable. </p>
+
+      <!-- new product card  -->
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+
+
+
+        <!-- card 1 -->
+        <div class="border justify-center items-center rounded-lg gap-6 p-6 flex flex-col lg:flex-row">
+          <div>
+            <img class="" src="images/5.png" alt="">
+          </div>
+
+          <div class="p-10 ps-4 text-left space-y-2">
+            <div class="flex justify-stretch">
+              <p class="me-2"> <i class="fa-solid fa-star text-amber-400"></i> 5.0</p>
+              <p class="me-2"><i class="fa-regular fa-eye"></i> 20</p>
+              <p class="me-2"><i class="fa-regular fa-heart"></i> 200</p>
+            </div>
+            <h4 class="text-sm font-bold">World Cup Flugs Football</h4>
+            <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+            <div class=" flex flex-col lg:flex-row justify-between">
+              <div>
+                <p class="price">Price:$22.00</p>
+              </div>
+              <p>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                Delivary Fee:Free
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="border justify-center items-center rounded-lg gap-6 p-6 flex flex-col lg:flex-row">
+          <div>
+            <img class="" src="images/6.png" alt="">
+          </div>
+
+          <div class="p-10 ps-4 text-left space-y-2">
+            <div class="flex justify-stretch">
+              <p class="me-2"> <i class="fa-solid fa-star text-amber-400"></i> 5.0</p>
+              <p class="me-2"><i class="fa-regular fa-eye"></i> 20</p>
+              <p class="me-2"><i class="fa-regular fa-heart"></i> 200</p>
+            </div>
+            <h4 class="text-sm font-bold">World Cup Flugs Football</h4>
+            <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+            <div class="flex flex-col lg:flex-row justify-between">
+              <div>
+                <p class="price">Price:$22.00</p>
+              </div>
+              <p>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                Delivary Fee:Free
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="border justify-center items-center rounded-lg gap-6 p-6 flex flex-col lg:flex-row">
+          <div>
+            <img class="" src="images/7.png" alt="">
+          </div>
+
+          <div class="p-10 ps-4 text-left space-y-2">
+            <div class="flex justify-stretch">
+              <p class="me-2"> <i class="fa-solid fa-star text-amber-400"></i> 5.0</p>
+              <p class="me-2"><i class="fa-regular fa-eye"></i> 20</p>
+              <p class="me-2"><i class="fa-regular fa-heart"></i> 200</p>
+            </div>
+            <h4 class="text-sm font-bold">Cap For Hockeys</h4>
+            <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+            <div class="flex flex-col lg:flex-row justify-between">
+              <div>
+                <p class="price">Price:$22.00</p>
+              </div>
+              <p>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                Delivary Fee:Free
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="border justify-center items-center rounded-lg gap-6 p-6 flex flex-col lg:flex-row">
+          <div>
+            <img class="" src="images/8.png" alt="">
+          </div>
+
+          <div class="p-10 ps-4 text-left space-y-2">
+            <div class="flex justify-stretch">
+              <p class="me-2"> <i class="fa-solid fa-star text-amber-400"></i> 5.0</p>
+              <p class="me-2"><i class="fa-regular fa-eye"></i> 20</p>
+              <p class="me-2"><i class="fa-regular fa-heart"></i> 200</p>
+            </div>
+            <h4 class="text-sm font-bold">World Cup Flugs Football</h4>
+            <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+            <div class="flex flex-col lg:flex-row justify-between">
+              <div>
+                <p class="price">Price:$22.00</p>
+              </div>
+              <p>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                Delivary Fee:Free
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="border justify-center items-center rounded-lg gap-6 p-6 flex flex-col lg:flex-row">
+          <div>
+            <img class="" src="images/9.png" alt="">
+          </div>
+
+          <div class="p-10 ps-4 text-left space-y-2">
+            <div class="flex justify-stretch">
+              <p class="me-2"> <i class="fa-solid fa-star text-amber-400"></i> 5.0</p>
+              <p class="me-2"><i class="fa-regular fa-eye"></i> 20</p>
+              <p class="me-2"><i class="fa-regular fa-heart"></i> 200</p>
+            </div>
+            <h4 class="text-sm font-bold">World Cup Flugs Football</h4>
+            <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+            <div class="flex flex-col lg:flex-row justify-between">
+              <div>
+                <p class="price">Price:$22.00</p>
+              </div>
+              <p>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                Delivary Fee:Free
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="border justify-center items-center rounded-lg gap-6 p-6 flex flex-col lg:flex-row">
+          <div>
+            <img class="" src="images/10.png" alt="">
+          </div>
+
+          <div class="p-10 ps-4 text-left space-y-2">
+            <div class="flex justify-stretch">
+              <p class="me-2"> <i class="fa-solid fa-star text-amber-400"></i> 5.0</p>
+              <p class="me-2"><i class="fa-regular fa-eye"></i> 20</p>
+              <p class="me-2"><i class="fa-regular fa-heart"></i> 200</p>
+            </div>
+            <h4 class="text-sm font-bold">World Cup Flugs Football</h4>
+            <p>Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+            <div class="flex flex-col lg:flex-row justify-between">
+              <div>
+                <p class="price">Price:$22.00</p>
+              </div>
+              <p>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                Delivary Fee:Free
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </section>
+
+    <!-- client questions -->
+    <section class="my-24 text-center">
+      <h2 class="text-4xl font-semibold mb-5">Client Questions</h2>
+      <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
+        slightly believable. </p>
+
+      <div class="flex flex-col lg:flex-row items-center justify-center">
+        <div>
+          <img class="h-2/3 w-2/3 sm:mb-10" src="images/11.png" alt="">
+        </div>
+        <div class="">
+          <div class="collapse collapse-plus ">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus ">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Hockey Training
+            </div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Private Lessons
+            </div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus ">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Ski Touring
+            </div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus ">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Booking
+            </div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus ">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Pricings
+            </div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- get in touch -->
+    <section class="my-24 text-center">
+      <h2 class="text-4xl font-semibold mb-5">Get In Touch</h2>
+      <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
+        slightly believable. </p>
+      <!-- input field container -->
+      <!-- card 1 -->
+      <div class="my-24 flex flex-col lg:flex-row justify-center items-center">
+        <div class="border rounded-lg m-6 p-6 ">
+          <div class="bg-[#BCED6D1A] w-full border rounded-lg pb-6 me-6">
+            <img class="image-full p-5 mb-5" src="images/Group 1171275318.png" alt="Shoes" /></figure>
+            <div class="ps-5 text-left">
+              <h2 class="">Phone Number:</h2>
+              <p>(+62) 123-321-543</p>
+
+            </div>
+          </div>
+          <div class="bg-[#FDDD5F1A] w-full border rounded-lg pb-6 mt-6 me-6">
+            <img class="image-full p-5 mb-5" src="images/Group 1171275317.png" alt="Shoes" /></figure>
+            <div class="ps-5 text-left">
+              <h2 class="">Email:</h2>
+              <p>hockeys@support.com</p>
+
+            </div>
+          </div>
+          <div class="bg-[#629CF31A] w-full border rounded-lg pb-6 mt-6 me-6">
+            <img class="image-full p-5 mb-5" src="images/Group 1171275321.png" alt="Shoes" /></figure>
+            <div class="ps-5 text-left">
+              <h2 class="">Location:</h2>
+              <p>152/1 Mohakhali Wireless Gate</p>
+
+            </div>
+          </div>
+        </div>
+
+        <!--input field  -->
+        <div>
+          <div class="flex flex-col lg:flrx-row gap-6">
+            <div>
+              <h6 class="text-sm text-left m-3 font-semibold">Your Name</h6>
+              <input type="text" placeholder="enter your name" class="input input-bordered w-full" disabled />
+
+              <h6 class="text-sm text-left m-3 font-semibold">Your Email</h6>
+              <input type="text" placeholder="enter your email" class="input input-bordered w-full " disabled />
+
+            </div>
+            <div>
+              <h6 class="text-sm text-left m-3 font-semibold">Your Name</h6>
+              <input type="text" placeholder="enter your name" class="input input-bordered w-full " disabled />
+
+              <h6 class="text-sm text-left m-3 font-semibold">Your Email</h6>
+              <input type="text" placeholder="enter your email" class="input input-bordered w-full " disabled />
+
+            </div>
+
+          </div>
+          <textarea placeholder="Write Your Message"
+            class="mb-6 textarea textarea-bordered textarea-lg w-full h-[370px] p-20 mt-6"></textarea>
+          <button class="btn text-white bg-red btn-block">Send Message</button>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <!-- social media -->
+    <section class="my-24">
+      <div class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+        <nav class="grid grid-flow-col gap-4">
+          <a class="link link-hover">Social Media</a>
+
+        </nav>
+        <nav>
+          <div class="grid grid-flow-col gap-4">
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                </path>
+              </svg></a>
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                <path
+                  d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                </path>
+              </svg></a>
+            <a><i class="h-full w-full fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-github"></i></a>
+          </div>
+        </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- footer section -->
+  <footer class="footer p-10  text-white bg-black ">
+    <nav>
+      <h6 class="footer-title text-2xl">Get In Touch</h6>
+      <p>Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam
+        proin. </p>
+      <a class="link link-hover"><i class="price me-2 fa-regular fa-envelope"></i> hockeys@support.com</a>
+      <a class="link link-hover"><i class="price me-2 fa-solid fa-phone"></i> (+62) 123-321-543</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Company</h6>
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Support</h6>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Services</h6>
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Cookie policy</a>
+    </nav>
+  </footer>
+
+
+
+
+</body>
+
+</html>
